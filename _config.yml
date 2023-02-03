@@ -1,0 +1,106 @@
+# Khusus kata kunci pencarian google
+keywords: configuration, scripts, rules, android, openwrt, windows, termux, magisk
+
+# Menampilkan text pada halaman pencarian google
+description: Simaster adalah situs khusus berisikan semua file yang di butuhkan untuk semua pengguna koneksi internet.
+
+# Nama dari blog ini
+situs: Simaster
+
+# Penulis atau pemilik pada blog ini
+author: Muhammad Yusuf
+
+# Email penulis atau pemilik pada blog ini
+email: myarachma92@gmail.com
+
+# Alamat utama pada atau CNAME pada blog ini
+baseurl: https://www.clashmwns.com
+
+# Bahasa penerjemah yang di gunakan pada blog ini
+subtitle:
+
+# Hak cipta pada blog ini berada pada bagian footer
+copyright: MWNS OFFICIAL
+
+# Jalur repository blog ini
+repository: mwnsofficial/master
+
+# Verifikasi Khusus untuk Keberadaan Situs ini pada Google
+google-site-verification: googled41425154ba52776.html
+
+# Bisa multifungsi selain web bisa juga menampilkan pdf
+output: web
+
+# optimasi search engine google
+site_title: Simaster adalah situs khusus berisikan semua file yang di butuhkan untuk semua pengguna koneksi internet.
+
+# ini tempat titik edit paling cepat untuk halaman atau post pada blog
+github_editme_path: mwnsofficial/master/blob/main/
+
+# ini tempat titik edit paling cepat untuk halaman atau post pada blog
+# gitlab_editme_path: 
+
+# khusus analisa google
+google_analytics: 
+
+# khusus adsense js
+google_adsense: ca-pub-1794381705838564
+
+exclude:
+  - .idea/
+  - .gitignore
+  - vendor
+
+feedback_subject_line: mwns
+
+feedback_email: myarachma92@gmail.com
+
+# feedback_disable: true
+
+# feedback_text: "Need help?"
+
+# feedback_link: "http://helpy.io/"
+
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+# Ini khusus halaman statis utama pada blog
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+
+# Ini khusus halaman post utama pada blog
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      search: true
+
+github: [metadata]
+
+# Widget khusus jekyll hosting
+plugins:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - some-other-jekyll-plugin
+  - jekyll-sitemap
