@@ -50,3 +50,4 @@ Bagi anda yang ingin dapatkan aplikasi cukup hanya di blog dan youtube dari sima
 Dan Bagi anda ingin kontribusi dukungan ke simaster bisa saja melalui tombol donasi yang ada di blog ini.
 
 terima kasih.
+
