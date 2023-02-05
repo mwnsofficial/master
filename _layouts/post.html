@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+<header class="post-header">
+<h1 class="post-title">{{ page.title }}</h1>
+<h5 class="text-white"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d-%b-%Y" }}</time>
+    {% if page.author %} {{ page.author }}{% endif %}</h5>
+      <div class="text-white"> <b>Tutorial:</b> {{page.summary}}</div>
+        <div class="tags">
+          {% if page.tags != null %}
+            <h5 class="text-white">Categories: 
+              {% assign projectTags = site.data.tags.allowed-tags %}
+                {% for tag in page.tags %}
+                  {% if projectTags contains tag %}
+                  <a href="{{ "tag-" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a></h5>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% if site.github_editme_path %}
+        <h5 class="text-white">Editor: 
+      <a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}{{page.path}}" class="btn btn-default githubEditButton" role="button"> Muhammad Yusuf</a></h5>
+    {% endif %}
+  </div>
+<div class="ads">
+{% include adsense.html %}
+</div>
+</header>
+<div class="post-content" itemprop="articleBody">
+  <!-- call the image.html template file -->
+    {% if page.image %}
+      <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image-alt }} width="100%" height="320">
+    {%- endif -%}
+<div class="text-white">
+    {% if page.summary %}
+    {% endif %}
+</div>
+
+    {{ content }}
+
+    {% if page.previous %}
+        {% assign previous = page.previous %}
+    {% else %}
+        {% assign previous = site.posts[0] %}
+    {% endif %}
+    <div class="left">
+        <a class="previous" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+            <div>
+                <h4>Prev Posts</h4>
+            </div>
+        </a>
+    </div>
+
+    {% if page.next %}
+        {% assign next = page.next %}
+    {% else %}
+        {%comment%}
+           As the array index start at zero we substract 1 to the total count,
+           we then get the last post index in the site.posts array
+        {%endcomment%}
+        {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+        {% assign next = site.posts[lastPostIndex] %}
+    {% endif %}
+    <div class="right">
+        <a class="next" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+            <div>
+                <h4>Next Posts</h4>
+            </div>
+        </a>
+    </div>
+<hr>
+
+<!-- other page content -->
+
+</div>
+</article>
+
