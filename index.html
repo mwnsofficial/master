@@ -526,6 +526,7 @@ layout: default
                         </div>
                         <!-- Details -->
                         <div class="most-recent mb-40">
+                        {% for post in site.posts limit:3 %}
                             <div class="most-recent-img">
                                 <img src="assets/img/gallery/most_recent.png" alt="">
                                 <div class="most-recent-cap">
@@ -534,26 +535,7 @@ layout: default
                                     <p>{{ site.author }} | {{ post.date }}</p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Single -->
-                        <div class="most-recent-single">
-                            <div class="most-recent-images">
-                                <img src="assets/img/gallery/most_recent1.png" alt="">
-                            </div>
-                            <div class="most-recent-capt">
-                                <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                <p>Jhon | 2 hours ago</p>
-                            </div>
-                        </div>
-                        <!-- Single -->
-                        <div class="most-recent-single">
-                            <div class="most-recent-images">
-                                <img src="assets/img/gallery/most_recent2.png" alt="">
-                            </div>
-                            <div class="most-recent-capt">
-                                <h4><a href="latest_news.html">Most Beautiful Things to Do in Sidney with Your BF</a></h4>
-                                <p>Jhon  |  3 hours ago</p>
-                            </div>
+                        {% endfor %}
                         </div>
                     </div>
                 </div>
