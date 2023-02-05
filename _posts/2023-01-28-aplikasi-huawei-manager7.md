@@ -7,7 +7,7 @@ permalink: aplikasi-huawei-manager7.html
 image: assets/images/post.jpg
 image-alt: aplikasi huawei manager 7
 summary: Aplikasi ini khusus modem huawei.
-tags: [huawei]
+tags: [modem]
 ---
 
 Selamat datang semuanya di halaman dari blog nya simaster.
