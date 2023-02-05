@@ -4,9 +4,9 @@ layout: post
 title: Huawei Manager V7
 date: 2023-01-28
 permalink: aplikasi-huawei-manager7.html
-image: assets/img/trending/trending_top3.jpg
+image: assets/img/trending/huawei_manager7.png
 image-alt: aplikasi huawei manager 7
-summary: Aplikasi ini khusus modem huawei.
+summary: New Huawei Manager Apk For Android
 tags: [modem]
 ---
 
