@@ -5,7 +5,7 @@ keywords: configuration, scripts, rules, android, openwrt, windows, termux, magi
 description: Simaster adalah situs khusus berisikan semua file yang di butuhkan untuk semua pengguna koneksi internet.
 
 # Nama dari blog ini
-situs: Simaster
+name: Simaster
 
 # Penulis atau pemilik pada blog ini
 author: Muhammad Yusuf
@@ -20,7 +20,7 @@ baseurl: https://www.clashmwns.com
 subtitle:
 
 # Hak cipta pada blog ini berada pada bagian footer
-copyright: MWNS OFFICIAL
+copyright: 
 
 # Jalur repository blog ini
 repository: mwnsofficial/master
