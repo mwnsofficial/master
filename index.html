@@ -15,6 +15,7 @@ layout: default
                             <!-- Single -->
                             <div class="single-slider">
                                 <div class="trending-top mb-30">
+                                    {% for post in site.posts %}
                                     <div class="trend-top-img">
                                         {% if post.image %}
                                         <img src="{{ post.image }}" alt="{{ post.title }}">
