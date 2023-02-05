@@ -23,7 +23,7 @@ layout: default
                                         <div class="trend-top-cap">
                                             <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">{% assign ttags = post.tags | join:'|' | append:'|' %}</span>
                                             <h2><a href="{{ post.url | prepend: site.baseurl }}" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">{% if post.summary %}{{ post.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ post.content | truncatewords: 50 | strip_html }}{% endif %}</a></h2>
-                                            <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by {{ site.author }}   -   {{ page.date }}</p>
+                                            <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">by {{ site.author }}   -   {{ post.date }}</p>
                                         </div>
                                     </div>
                                     {% endfor %}
