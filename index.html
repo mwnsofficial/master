@@ -530,8 +530,8 @@ layout: default
                                 <img src="assets/img/gallery/most_recent.png" alt="">
                                 <div class="most-recent-cap">
                                     <span class="bgbeg">{% for tag in post.tags %}<a href="{{ "tag-" | append: tag | append: ".html"}}">{{tag}}</a>{% endfor %}</span>
-                                    <h4><a href="latest_news.html">{% if post.summary %}{{ post.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ post.content | truncatewords: 50 | strip_html }}{% endif %}</a></h4>
-                                    <p>{{ site.author }}  |  {{ post.date }}</p>
+                                    <h4><a href="{{ post.url | prepend: site.baseurl }}">{% if post.summary %}{{ post.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ post.content | truncatewords: 50 | strip_html }}{% endif %}</a></h4>
+                                    <p>{{ site.author }} | {{ post.date }}</p>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +542,7 @@ layout: default
                             </div>
                             <div class="most-recent-capt">
                                 <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                <p>Jhon  |  2 hours ago</p>
+                                <p>Jhon | 2 hours ago</p>
                             </div>
                         </div>
                         <!-- Single -->
